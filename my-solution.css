@@ -80,7 +80,7 @@
 
 .ex-8-img:hover {
   -webkit-filter: grayscale(100%);
-  filter: saturate(8) sepia(1);
+  filter: saturate(7) sepia(1);
   border-radius: 25px;
 }
 
@@ -92,7 +92,7 @@
 
 .ex-9-img:hover {
   -webkit-filter: grayscale(100%);
-  filter: saturate(8) sepia(1);
+  filter: blur(2px) sepia(1);
   transform: scale(1.4);
   border-radius: 25px;
 }
@@ -100,3 +100,44 @@
 .ex-9-img {
   transition: 2s ease-in-out;
 }
+
+/* Esercizio 10 */
+
+.ex-10-icon {
+  animation-name: spin;
+  animation-duration: 1000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Esercizio 11 */
+
+.ex-11-icon:hover {
+  animation-name: partial-spin;
+  animation-duration: 2000ms;
+  animation-timing-function: linear;
+}
+
+@keyframes partial-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  90% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Esercizio 12 */
